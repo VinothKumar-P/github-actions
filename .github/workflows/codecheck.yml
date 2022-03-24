@@ -9,9 +9,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
-      - name: Super Duper Linter
-        uses: JustinGrote/Super-Duper-Linter@preview
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
 
         env:
           DEFAULT_BRANCH: main
